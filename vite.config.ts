@@ -14,6 +14,7 @@ export default defineConfig({
           enabled: true
         },
         manifest: {
+          start_url: "/",
           name: 'IShophone',
           short_name: 'IShop',
           description: 'Покупка телефона стала дешевой и доступной',

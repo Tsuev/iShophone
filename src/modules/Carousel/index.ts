@@ -1,3 +1,5 @@
-import Carousel from './components/Carousel.vue'
+import Carousel from './Carousel.vue'
 
-export { Carousel }
+export {
+  Carousel
+}
