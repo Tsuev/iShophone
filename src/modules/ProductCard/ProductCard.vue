@@ -8,13 +8,15 @@
         {{ phoneType }}
       </div>
       <div class="product-card__states">
-
+        <Battery />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang='ts' >
+import Battery from './components/battery.vue';
+
 export interface ProductCard {
   phoneType?: string
 }
@@ -39,7 +41,7 @@ const props = withDefaults(defineProps<ProductCard>(), {
   }
 
   &__title {
-    @apply text-5xl font-extrabold text-center text-white
+    @apply text-5xl font-extrabold text-white
   }
 
 
