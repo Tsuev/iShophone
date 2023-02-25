@@ -10,6 +10,6 @@
 
 <style lang='scss' scoped>
 .default {
-  padding: 20px;
+  @apply p-30
 }
 </style>
