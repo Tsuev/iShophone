@@ -1,43 +1,45 @@
 <template>
   <div class="product-card">
     <div class="product-card__view">
-      <img class="product-card__view__logo" src="./assets/img/iphone.png" alt="">
-      <div class="product-card__view__title">
-        {{ typePhone }}
-      </div>
+      <img class="product-card__view__product" src="./assets/img/iphone.png" alt="">
     </div>
     <div class="product-card__data">
+      <div class="product-card__title">
+        {{ phoneType }}
+      </div>
+      <div class="product-card__states">
 
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang='ts' >
 export interface ProductCard {
-  typePhone?: string
+  phoneType?: string
 }
 
 const props = withDefaults(defineProps<ProductCard>(), {
-  typePhone: 'iPhone'
+  phoneType: 'iPhone 14 pro max'
 })
 </script>
 
 <style lang='scss' scoped>
 .product-card {
-  @apply grid grid-cols-1 bg-zinc-900 rounded-3xl;
+  @apply grid grid-cols-1 gap-20 bg-zinc-900 rounded-3xl p-20;
 
   @apply h-500;
 
   &__view {
-    @apply overflow-hidden relative;
+    @apply overflow-hidden flex justify-center;
 
-    &__logo {
-      @apply z-10
+    &__product {
+      @apply h-full
     }
+  }
 
-    &__title {
-      @apply absolute top-0 left-0 text-8xl font-extrabold text-zinc-800 opacity-50 z-0
-    }
+  &__title {
+    @apply text-5xl font-extrabold text-center text-white
   }
 
 
