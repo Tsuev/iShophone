@@ -19,6 +19,10 @@ defineProps<{
 </script>
 
 <style lang='scss' scoped>
+.carousel {
+  @apply mb-30
+}
+
 .carousel__viewport {
   perspective: 2000px;
 }

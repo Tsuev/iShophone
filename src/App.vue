@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import Default from './layouts/default.vue';
+import { Navigation } from './modules/Navigation/index';
 </script>
 
 <template>
-  <Default>
+  <div class="app">
     <RouterView />
-  </Default>
+  </div>
+  <Navigation />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 
 </style>
