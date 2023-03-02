@@ -29,7 +29,6 @@ const props = withDefaults(defineProps<ProductCard>(), {
 <style lang='scss' scoped>
 .product-card {
   @apply grid grid-cols-1 gap-20 bg-zinc-900 rounded-3xl p-20;
-
   @apply h-500;
 
   &__view {
@@ -42,6 +41,10 @@ const props = withDefaults(defineProps<ProductCard>(), {
 
   &__title {
     @apply text-5xl font-extrabold text-white
+  }
+
+  &__states {
+    @apply grid grid-cols-3 mt-20
   }
 
 
