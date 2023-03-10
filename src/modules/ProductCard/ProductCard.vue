@@ -9,6 +9,8 @@
       </div>
       <div class="product-card__states">
         <Battery />
+        <Memory />
+        <Color />
       </div>
     </div>
   </div>
@@ -16,6 +18,8 @@
 
 <script setup lang='ts' >
 import Battery from './components/battery.vue';
+import Color from './components/color.vue';
+import Memory from './components/memory.vue';
 
 export interface ProductCard {
   phoneType?: string
