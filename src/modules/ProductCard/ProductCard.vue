@@ -12,6 +12,7 @@
         <Memory />
         <Color />
       </div>
+      <Timer />
     </div>
   </div>
 </template>
@@ -20,6 +21,7 @@
 import Battery from './components/battery.vue';
 import Color from './components/color.vue';
 import Memory from './components/memory.vue';
+import Timer from './components/timer.vue';
 
 export interface ProductCard {
   phoneType?: string
