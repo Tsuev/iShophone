@@ -34,7 +34,7 @@ export interface ProductCard {
   phoneType?: string
 }
 
-const props = withDefaults(defineProps<ProductCard>(), {
+withDefaults(defineProps<ProductCard>(), {
   phoneType: 'iPhone 14 pro max'
 })
 </script>
