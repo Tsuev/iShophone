@@ -1,5 +1,5 @@
 <template>
-  <img class="h-50" :src="path" alt="">
+  <img class="brand" :src="path" alt="">
 </template>
 
 <script lang="ts" setup>
@@ -9,3 +9,9 @@ export interface Props {
 
 defineProps<Props>()
 </script>
+
+<style lang="scss">
+  .brand {
+    @apply h-50;
+  }
+</style>

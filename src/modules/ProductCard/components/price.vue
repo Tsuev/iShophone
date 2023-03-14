@@ -22,6 +22,10 @@ withDefaults(defineProps<Props>(), {
 
 <style lang="scss" scoped>
 .price {
-  @apply flex text-2xl font-bold rounded-tl-[3rem] rounded-br-[3rem] bg-green-600 absolute text-white py-20 px-20 right-0 bottom-0;
+  @apply flex bg-green-600;
+  @apply rounded-tl-[3rem] rounded-br-[3rem];
+  @apply text-2xl font-bold text-white;
+  @apply absolute right-0 bottom-0;
+  @apply py-20 px-20;
 }
 </style>
