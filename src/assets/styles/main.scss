@@ -4,9 +4,4 @@
 #app {
   @apply box-border m-0 p-0 h-height-fullscreen font-gilroy;
   @apply dark:bg-gray-800 dark:text-white;
-  @apply flex flex-col;
-
-  .app {
-    @apply grow
-  }
 }

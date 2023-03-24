@@ -1,0 +1,22 @@
+name: Deploy
+on: 
+  pull_request:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 6.0.2
+      - name: Install depencies 🔄️
+        run: pnpm install
+      - name: Build apllication 🔧
+        run: npm run build 
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          folder: dist

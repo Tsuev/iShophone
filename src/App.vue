@@ -1,15 +1,14 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
-import { Navigation } from './modules/Navigation/index';
+import DesktopView from '@/components/DesktopView.vue';
+import MobileView from '@/components/MobileView.vue';
+import isMobile from './helpers/mobileDetected';
+
+
 </script>
 
 <template>
-  <div class="app">
-    <RouterView />
-  </div>
-  <Navigation />
+  <DesktopView v-if="!isMobile" />
+  <MobileView v-else />
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
